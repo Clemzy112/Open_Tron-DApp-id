@@ -261,3 +261,36 @@ height:500px;
 max-width:520px;
 margin:auto;
 }
+
+.themeBtn{
+width:44px;
+height:44px;
+border:none;
+border-radius:12px;
+background:#222;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+}
+
+.themeBtn svg{
+width:18px;
+height:18px;
+fill:white;
+}
+
+body.lightMode{
+background:#f3f3f3;
+color:black;
+}
+
+body.lightMode .card{
+background:white;
+color:black;
+}
+
+body.lightMode .actionBtn{
+background:#eaeaea;
+color:black;
+}
