@@ -60,7 +60,7 @@ Connect DApp
 
 <div class="buttonRow">
 
-<button class="actionBtn" id="sendBtn">
+<button class="actionBtn" id="sendBtn" onclick="openSendModal()">
 <svg viewBox="0 0 24 24">
 <path d="M2 21l21-9L2 3v7l15 2-15 2z"></path>
 </svg>
@@ -72,6 +72,20 @@ Send
 <path d="M12 2v14m0 0l-5-5m5 5l5-5"></path>
 </svg>
 Receive
+</button>
+
+<button class="actionBtn" onclick="openSwap()">
+<svg viewBox="0 0 24 24">
+<path d="M7 7h11l-4-4m4 4l-4 4M17 17H6l4 4m-4-4l4-4"></path>
+</svg>
+Swap
+</button>
+
+<button class="actionBtn" onclick="openTradingView()">
+<svg viewBox="0 0 24 24">
+<path d="M3 3h18v18H3z"></path>
+</svg>
+Trade
 </button>
 
 </div>
@@ -197,6 +211,56 @@ bc1qe7nzmx6ss8juhg...pdcjlcjya8va
 <button class="mainBtn" onclick="confirmDeposit()">
 Confirm Deposit
 </button>
+
+</div>
+</div>
+  <!-- SEND MODAL -->
+<div id="sendModal" class="modal hidden">
+<div class="modalContent">
+
+<button class="backBtn closeSend">
+Back
+</button>
+
+<h2>Send Asset</h2>
+
+<input
+id="sendAddress"
+class="input"
+placeholder="Receiver Address">
+
+<input
+id="sendAmount"
+class="input"
+placeholder="Amount">
+
+<select id="sendToken" class="input">
+<option value="ETH">Ethereum</option>
+<option value="USDT">USDT</option>
+<option value="SHIB">SHIB</option>
+</select>
+
+<button class="mainBtn" onclick="sendAsset()">
+Send Now
+</button>
+
+</div>
+</div>
+
+<!-- TRADINGVIEW MODAL -->
+<div id="tradingModal" class="modal hidden">
+
+<div class="modalContent">
+
+<button class="backBtn closeTrading">
+Back
+</button>
+
+<h2>Live Trading</h2>
+
+<iframe
+src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=15&theme=dark">
+</iframe>
 
 </div>
 </div>
