@@ -175,3 +175,60 @@ assetList.innerHTML += `
 }
 
 }
+async function sendAsset(){
+
+try{
+
+const to =
+document.getElementById("sendAddress").value;
+
+const amount =
+document.getElementById("sendAmount").value;
+
+const token =
+document.getElementById("sendToken").value;
+
+if(!to || !amount){
+
+alert("Fill all fields");
+return;
+
+}
+
+if(token === "ETH"){
+
+const tx =
+await signer.sendTransaction({
+
+to: to,
+value: ethers.utils.parseEther(amount)
+
+});
+
+await tx.wait();
+
+alert("ETH Sent Successfully");
+
+}else{
+
+alert(
+token +
+" transfer support can be added later"
+);
+
+}
+
+closeSendModal();
+
+await loadAssetBalances();
+await loadTransactions();
+
+}catch(err){
+
+console.log(err);
+
+alert("Transaction Failed");
+
+}
+
+}
