@@ -367,3 +367,79 @@ height:24px;
 }
 
 }
+
+/* PAGE DARK MODE */
+
+body.dark{
+background:#020617!important;
+color:#fff!important;
+}
+
+/* POPUP */
+
+body.dark .popup{
+background:#0f172a;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+/* CARDS */
+
+body.dark .card{
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+/* TEXT */
+
+body.dark .title,
+body.dark .value,
+body.dark .step-title,
+body.dark .modal-title,
+body.dark .address{
+color:#fff;
+}
+
+/* LABELS */
+
+body.dark .label,
+body.dark .note,
+body.dark .address-label{
+color:#94a3b8;
+}
+
+/* WALLET */
+
+body.dark .wallet{
+background:#111827;
+color:#fff;
+}
+
+/* INPUT */
+
+body.dark input{
+background:#111827;
+color:#fff;
+}
+
+/* ADDRESS BOX */
+
+body.dark .address-box{
+background:#111827;
+}
+
+/* MODAL */
+
+body.dark .modal-box{
+background:#0f172a;
+}
+
+/* QR */
+
+body.dark .qr{
+border:1px solid rgba(255,255,255,0.08);
+}
+
+/* CLOSE ICON */
+
+body.dark .close{
+color:#fff;
+}
