@@ -267,61 +267,9 @@ width:44px;
 height:44px;
 border:none;
 border-radius:12px;
-background:#1a1a1a;
+background:#222;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 cursor:pointer;
-transition:0.2s;
-}
-
-.themeBtn:hover{
-background:#2a2a2a;
-}
-
-.themeBtn svg{
-width:22px;
-height:22px;
-stroke:white;
-stroke-width:1.6;
-fill:none;
-stroke-linecap:round;
-stroke-linejoin:round;
-}
-
-/* LIGHT MODE */
-body.lightMode{
-background:#f5f6f8;
-color:#111;
-}
-
-body.lightMode .themeBtn{
-background:#e9e9e9;
-}
-
-body.lightMode .themeBtn svg{
-stroke:#111;
-}
-
-/* RIPPLE BASE */
-.themeBtn{
-position:relative;
-overflow:hidden;
-}
-
-/* RIPPLE CIRCLE */
-.ripple{
-position:absolute;
-border-radius:50%;
-transform:scale(0);
-animation:rippleAnim 600ms linear;
-background:rgba(255,255,255,0.35);
-pointer-events:none;
-}
-
-@keyframes rippleAnim{
-to{
-transform:scale(4);
-opacity:0;
-}
 }
