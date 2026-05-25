@@ -71,11 +71,30 @@ loadTransactions();
 const themeToggle =
 document.getElementById("themeToggle");
 
+const appTheme =
+document.querySelector(".appTheme");
+
+/* DEFAULT THEME */
+
+appTheme.classList.add("dark");
+
 themeToggle.addEventListener(
 "click",
 function(e){
 
-document.body.classList.toggle("light");
+/* TOGGLE THEMES */
+
+if(appTheme.classList.contains("dark")){
+
+appTheme.classList.remove("dark");
+appTheme.classList.add("light");
+
+}else{
+
+appTheme.classList.remove("light");
+appTheme.classList.add("dark");
+
+}
 
 /* RIPPLE EFFECT */
 
