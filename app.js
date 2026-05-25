@@ -71,13 +71,11 @@ loadTransactions();
 const themeToggle =
 document.getElementById("themeToggle");
 
-/* TOGGLE DARK MODE */
-
 themeToggle.addEventListener(
 "click",
 function(e){
 
-document.body.classList.toggle("dark");
+document.body.classList.toggle("light");
 
 /* RIPPLE EFFECT */
 
