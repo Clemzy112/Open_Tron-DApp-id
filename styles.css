@@ -265,139 +265,34 @@ margin:auto;
 /* THEME WRAPPER */
 
 .appTheme{
-background:#020617;
-color:#fff;
-transition:0.35s ease;
 min-height:100vh;
-}
-
-/* LIGHT MODE */
-
-.appTheme.light{
-background:#f3f4f6!important;
-color:#111827!important;
+transition:0.35s ease;
 }
 
 /* DARK MODE */
 
 .appTheme.dark{
-background:#020617!important;
-color:#ffffff!important;
+background:#020617;
 }
 
-/* TOGGLE BUTTON */
+/* LIGHT MODE */
 
-.themeBtn{
-position:fixed;
-top:18px;
-right:18px;
-width:54px;
-height:54px;
-border:none;
-border-radius:18px;
-background:#111827;
-display:flex;
-justify-content:center;
-align-items:center;
-cursor:pointer;
-overflow:hidden;
-z-index:99999;
+.appTheme.light{
+background:#f3f4f6;
+}
+
+/* CONTENT AREA ONLY */
+
+.contentArea{
 transition:0.35s ease;
-box-shadow:
-0 10px 30px rgba(0,0,0,0.35);
 }
 
-/* LIGHT BUTTON */
+/* TEXT COLORS */
 
-.appTheme.light .themeBtn{
-background:#ffffff;
-box-shadow:
-0 10px 30px rgba(0,0,0,0.12);
+.appTheme.dark .contentArea{
+color:#ffffff;
 }
 
-/* DARK BUTTON */
-
-.appTheme.dark .themeBtn{
-background:#111827;
-box-shadow:
-0 10px 30px rgba(0,0,0,0.35);
-}
-
-/* SVG ICON */
-
-.themeBtn svg{
-width:26px;
-height:26px;
-fill:none;
-stroke-width:2;
-stroke-linecap:round;
-stroke-linejoin:round;
-transition:0.4s ease;
-stroke:#ffffff;
-}
-
-/* LIGHT ICON */
-
-.appTheme.light .themeBtn svg{
-stroke:#111827;
-transform:rotate(180deg) scale(0.9);
-}
-
-/* DARK ICON */
-
-.appTheme.dark .themeBtn svg{
-stroke:#ffffff;
-}
-
-/* RIPPLE EFFECT */
-
-.ripple{
-position:absolute;
-border-radius:50%;
-transform:scale(0);
-animation:rippleAnim 600ms linear;
-background:rgba(255,255,255,0.35);
-pointer-events:none;
-}
-
-/* RIPPLE ANIMATION */
-
-@keyframes rippleAnim{
-
-to{
-transform:scale(4);
-opacity:0;
-}
-
-}
-
-/* QR */
-
-.appTheme.light .qr{
-border:1px solid #e5e7eb;
-}
-
-/* CLOSE ICON */
-
-.appTheme.light .close{
+.appTheme.light .contentArea{
 color:#111827;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.themeBtn{
-top:14px;
-right:14px;
-width:50px;
-height:50px;
-border-radius:16px;
-}
-
-.themeBtn svg{
-width:24px;
-height:24px;
-}
-
 }
