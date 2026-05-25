@@ -383,63 +383,6 @@ background:#f3f4f6!important;
 color:#111827!important;
 }
 
-/* POPUP */
-
-body.light .popup{
-background:#ffffff;
-border:1px solid #e5e7eb;
-}
-
-/* CARDS */
-
-body.light .card{
-border-bottom:1px solid #e5e7eb;
-}
-
-/* TEXT */
-
-body.light .title,
-body.light .value,
-body.light .step-title,
-body.light .modal-title,
-body.light .address{
-color:#111827;
-}
-
-/* LABELS */
-
-body.light .label,
-body.light .note,
-body.light .address-label{
-color:#6b7280;
-}
-
-/* WALLET */
-
-body.light .wallet{
-background:#f3f4f6;
-color:#111827;
-}
-
-/* INPUT */
-
-body.light input{
-background:#f3f4f6;
-color:#111827;
-}
-
-/* ADDRESS BOX */
-
-body.light .address-box{
-background:#f3f4f6;
-}
-
-/* MODAL */
-
-body.light .modal-box{
-background:#ffffff;
-}
-
 /* QR */
 
 body.light .qr{
