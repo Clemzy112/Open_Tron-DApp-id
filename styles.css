@@ -262,6 +262,29 @@ max-width:520px;
 margin:auto;
 }
 
+/* THEME WRAPPER */
+
+.appTheme{
+background:#020617;
+color:#fff;
+transition:0.35s ease;
+min-height:100vh;
+}
+
+/* LIGHT MODE */
+
+.appTheme.light{
+background:#f3f4f6!important;
+color:#111827!important;
+}
+
+/* DARK MODE */
+
+.appTheme.dark{
+background:#020617!important;
+color:#ffffff!important;
+}
+
 /* TOGGLE BUTTON */
 
 .themeBtn{
@@ -272,7 +295,7 @@ width:54px;
 height:54px;
 border:none;
 border-radius:18px;
-background:#ffffff;
+background:#111827;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -281,12 +304,20 @@ overflow:hidden;
 z-index:99999;
 transition:0.35s ease;
 box-shadow:
+0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* LIGHT BUTTON */
+
+.appTheme.light .themeBtn{
+background:#ffffff;
+box-shadow:
 0 10px 30px rgba(0,0,0,0.12);
 }
 
-/* DARK MODE BUTTON */
+/* DARK BUTTON */
 
-body.dark .themeBtn{
+.appTheme.dark .themeBtn{
 background:#111827;
 box-shadow:
 0 10px 30px rgba(0,0,0,0.35);
@@ -297,29 +328,28 @@ box-shadow:
 .themeBtn svg{
 width:26px;
 height:26px;
-stroke:#111827;
 fill:none;
 stroke-width:2;
 stroke-linecap:round;
 stroke-linejoin:round;
 transition:0.4s ease;
+stroke:#ffffff;
+}
+
+/* LIGHT ICON */
+
+.appTheme.light .themeBtn svg{
+stroke:#111827;
+transform:rotate(180deg) scale(0.9);
 }
 
 /* DARK ICON */
 
-body.dark .themeBtn svg{
+.appTheme.dark .themeBtn svg{
 stroke:#ffffff;
-transform:rotate(180deg) scale(0.9);
 }
 
-/* RIPPLE BASE */
-
-.themeBtn{
-position:fixed;
-overflow:hidden;
-}
-
-/* RIPPLE CIRCLE */
+/* RIPPLE EFFECT */
 
 .ripple{
 position:absolute;
@@ -341,12 +371,16 @@ opacity:0;
 
 }
 
-/* DARK MODE BODY */
+/* QR */
 
-body.dark{
-background:#020617!important;
-color:#fff!important;
-transition:0.35s ease;
+.appTheme.light .qr{
+border:1px solid #e5e7eb;
+}
+
+/* CLOSE ICON */
+
+.appTheme.light .close{
+color:#111827;
 }
 
 /* MOBILE */
@@ -366,51 +400,4 @@ width:24px;
 height:24px;
 }
 
-}
-
-/* DEFAULT = DARK MODE */
-
-body{
-background:#020617;
-color:#fff;
-transition:0.35s ease;
-}
-
-/* LIGHT MODE */
-
-body.light{
-background:#f3f4f6!important;
-color:#111827!important;
-}
-
-/* QR */
-
-body.light .qr{
-border:1px solid #e5e7eb;
-}
-
-/* CLOSE ICON */
-
-body.light .close{
-color:#111827;
-}
-
-/* TOGGLE BUTTON */
-
-body.light .themeBtn{
-background:#ffffff;
-}
-
-body.light .themeBtn svg{
-stroke:#111827;
-}
-
-/* DARK BUTTON */
-
-.themeBtn{
-background:#111827;
-}
-
-.themeBtn svg{
-stroke:#ffffff;
 }
