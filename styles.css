@@ -296,3 +296,22 @@ color:#ffffff;
 .appTheme.light .contentArea{
 color:#111827;
 }
+
+/* KEEP BOXES DARK ALWAYS */
+
+.card,
+.modal,
+.input,
+.actionBtn,
+.backBtn{
+
+background:#151515 !important;
+color:#ffffff !important;
+
+}
+
+/* TX LIST CARDS */
+
+#txList .card{
+background:#111111 !important;
+}
